@@ -6,6 +6,5 @@ generate web pages on the server side.
 
 Element
  (elementName: string,
- elementNumber:number, 
  atominNumber: number,
  symbol; string )
