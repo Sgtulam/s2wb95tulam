@@ -5,7 +5,15 @@ block content
   - results=[{"elementName":"Hydrogen","atominNumber":1,"symbol":"H"},{"elementName":"Magnesium","atominNumber":12,"symbol":"Mg"},{"elementName":"Oxygen","atominNumber":8,"symbol":"O"}]
   .container-fluid
     .row
-      each value in results
-       .col-sm-2(style="background-color: coral") elementName:#{value.elementName}<br> atominNumber:#{value.atominNumber}<br> symbol:#{value.symbol} 
+      each value,index in results
+       .col-sm-2(style="background-color: coral" onclick=`buy(${index+1})`) elementName:#{value.elementName}<br> atominNumber:#{value.atominNumber}<br> symbol:#{value.symbol} 
+  script.
+    function buy(x)   {
+      alert(`You Purchased item : ${x}`)
+    }                      
+   
+   
+ 
+
          
             
