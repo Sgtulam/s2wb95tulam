@@ -8,6 +8,7 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var elementRouter = require('./routes/element');
 var addModsRouter = require('./routes/addmods');
+var selectorRouter = require('./routes/selector');
 
 var app = express();
 
@@ -25,6 +26,8 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/element', elementRouter);
 app.use('/addmods', addModsRouter);
+app.use('/selector', selectorRouter)
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
