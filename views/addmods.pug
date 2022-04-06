@@ -14,7 +14,7 @@ block content
   else if(cols>10 || cols<1)
       h2 Please enetr  cols from 1 to 10 
   else 
-    table#outer
+    table.table-bordered.table-striped#outer
       - for(let i=0; i<rows; i++) {
           tr#middle
             - for(let j=0; j<cols; j++) {
